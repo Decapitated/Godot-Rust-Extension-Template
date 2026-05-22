@@ -1,0 +1,3 @@
+[placeholders]
+godot_dir = { prompt = "Enter Godot directory", default = "demo", type = "string" }
+rust_dir = { prompt = "Enter Rust directory", default = "rust", type = "string" }

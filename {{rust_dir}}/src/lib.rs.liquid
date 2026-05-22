@@ -1,0 +1,12 @@
+use godot::prelude::*;
+
+struct {{project-name | upper_camel_case}};
+
+#[gdextension]
+unsafe impl ExtensionLibrary for {{project-name | upper_camel_case}} {
+    fn on_stage_init(stage: InitStage) {
+        if stage == InitStage::MainLoop {
+            godot_print!("Hello, world!");
+        }
+    }
+}
